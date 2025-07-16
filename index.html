@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vault of Codes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vault of Codes</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#FQS">FQS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+     <h1>Explore <span class="highlight">Vault of Codes</span></h1>
+    <!-- Trigger Button -->
+<button onclick="openModal()">Join Us</button>
+
+<!-- Modal Form -->
+<!-- Modal Form -->
+<div id="modal" class="modal" style="display:none;">
+  <div class="modal-content" style="background:#fff; padding:20px; border-radius:10px; width:300px; margin:auto; position:relative;">
+    <span onclick="closeModal()" class="close-btn" style="position:absolute; top:10px; right:15px; font-size:20px; cursor:pointer;">&times;</span>
+    <h3>Join Us</h3>
+    <form id="joinForm">
+      <input type="text" id="name" placeholder="Your Name" required style="width:100%; padding:8px; margin:5px 0;" />
+      <input type="email" id="email" placeholder="Your Email" required style="width:100%; padding:8px; margin:5px 0;" />
+      <input type="text" id="course" placeholder="Course" required style="width:100%; padding:8px; margin:5px 0;" />
+      <button type="submit" style="margin-top:10px; padding:10px; width:100%; background:#222; color:#fff; border:none; border-radius:5px;">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Display After Submission -->
+<div id="result" class="user-details" style="display:none; background:#f9f9f9; padding:20px; margin-top:20px; border-radius:8px; border:1px solid #ddd;">
+  <h3>Submission Details</h3>
+  <p><strong>Name:</strong> <span id="showName"></span></p>
+  <p><strong>Email:</strong> <span id="showEmail"></span></p>
+  <p><strong>Course:</strong> <span id="showCourse"></span></p>
+</div>
+
+  <section class="section" id="courses">
+    <h2>Our Courses</h2>
+    <div class="card-container">
+      <div class="card">Web Development</div>
+      <div class="card">Python internships</div>
+      <div class="card">App Dev Training</div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Student Projects</h2>
+    <div class="card-container">
+      <div class="card">E-Commerce UI</div>
+      <div class="card">Portfolio Website</div>
+      <div class="card">AI Chatbot</div>
+    </div>
+  </section>
+
+  <!-- Modified FAQ section with improved color, icons, and spacing -->
+  <section class="section" id="faq" style="background: linear-gradient(90deg, #8ba7df 60%, rgb(10, 10, 10) 100%); border-radius: 16px; box-shadow: 0 4px 16px rgba(139,167,223,0.15); margin-top: 2rem;">
+    <h2 style="color: #222; margin-bottom: 2rem;">FAQs</h2>
+    <div style="max-width: 600px; margin: 0 auto;">
+      <button class="accordion" style="font-weight:600;color:#222;">
+        <span style="margin-right:8px; color:#3b5998;">&#222;</span>
+ What is Vault of Codes?
+      </button>
+      <div class="panel" style="color:#222;">
+        A platform offering internships in various tech domains.
+      </div>
+
+      <button class="accordion" style="font-weight:600;color:#222;">
+          <span style="margin-right:8px; color:#3b5998;">&#222;</span>
+        How do I apply?
+</button>
+      <div class="panel" style="color:#222;">
+        Click on <b>Join Us</b> and submit your details using the form provided in the popup modal.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vault of Codes. All rights reserved.</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close-btn">&times;</span>
+      <h3>Join Us</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
